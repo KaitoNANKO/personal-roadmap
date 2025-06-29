@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南光開斗 戦略的ロードマップ | 心のきらめきを社会のインフラに</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-color: #f8f9fa;
+        }
+        /* --start-color: #E9D5FF; --mid-color: #FBCFE8; --end-color: #FFE4E6; */
+        .gradient-bg {
+            background-color: #E9D5FF;
+            background-image: linear-gradient(135deg, #E9D5FF 0%, #FBCFE8 50%, #FFE4E6 100%);
+        }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 1.2rem;
+            width: 4px;
+            background-color: #cbd5e1;
+        }
+        .timeline-item {
+            position: relative;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: 0;
+            top: 0.25rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(-50%);
+        }
+        .text-shadow {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white p-8 md:p-12 text-center rounded-b-3xl">
+        <h1 class="text-4xl md:text-6xl font-bold mb-2 text-shadow">南光 開斗</h1>
+        <p class="text-lg md:text-2xl font-semibold text-shadow">戦略的ロードマップ</p>
+        <p class="mt-4 max-w-3xl mx-auto text-xl text-shadow">ヤングケアラーとしての原体験を原動力に、難病患者とケアラーの「選択肢の情報格差」を解消し、<br>誰もが「心のきらめき」を持って生きられる社会を共創する、未来の福祉を実装するインフラデザイナー</p>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Core Philosophy -->
+        <section class="my-16 text-center">
+            <h2 class="section-title text-purple-600 border-purple-600 inline-block">思想と哲学</h2>
+            <div class="mt-8 flex flex-col md:flex-row items-center justify-center gap-8">
+                <div class="icon-box bg-purple-100 text-purple-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.2 1.2L3 12l5.8 1.9a2 2 0 0 1 1.2 1.2L12 21l1.9-5.8a2 2 0 0 1 1.2-1.2L21 12l-5.8-1.9a2 2 0 0 1-1.2-1.2z"/></svg>
+                </div>
+                <p class="text-3xl font-bold text-gray-700">「困難下でも誰もが『<span class="text-purple-600">心のきらめき</span>』を持って生きられる社会」</p>
+            </div>
+            <p class="mt-4 text-lg max-w-2xl mx-auto">
+                生きているかと同じくらい「生きたい」と思えるか。体が不自由でも、心がきらめく瞬間こそが生きる上で不可欠である。
+            </p>
+        </section>
+
+        <!-- Two Column Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-8">
+                
+                <!-- Action Plan -->
+                <section id="action-plan">
+                    <h2 class="section-title text-pink-600 border-pink-600">アクションプラン</h2>
+                    <div class="relative timeline space-y-12 pl-8">
+                        
+                        <!-- Year 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-dot bg-pink-500 text-white">
+                                <span class="font-bold">1</span>
+                            </div>
+                            <div class="pl-12">
+                                <h3 class="text-2xl font-bold text-pink-600 mb-2">1年目 (~2026.6): 飛躍的成長と基盤確立</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="card bg-white/90">
+                                        <h4 class="font-bold text-xl mb-2 text-pink-700">Infora (非営利)</h4>
+                                        <ul class="list-disc list-inside space-y-1 text-left">
+                                            <li>一般社団法人化、運営体制の構築</li>
+                                            <li>正規版データベース リリース</li>
+                                            <li>2自治体、5当事者団体と提携</li>
+                                            <li>「レアリゼ！」始動、10名の願い実現</li>
+                                            <li>CF 300万円調達、スポンサー3社獲得</li>
+                                            <li>アクセラ採択、メディア掲載20件</li>
+                                        </ul>
+                                    </div>
+                                    <div class="card bg-white/90">
+                                        <h4 class="font-bold text-xl mb-2 text-pink-700">営利事業</h4>
+                                        <ul class="list-disc list-inside space-y-1 text-left">
+                                            <li><span class="font-bold">DE&I・ケアラー支援コンサルティング</span>を<span class="bg-yellow-200 px-1 rounded">個人事業主</span>として開始</li>
+                                            <li>収益目標: 50万円</li>
+                                            <li>自身の原体験を価値に変え経済基盤を確立</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Year 2 -->
+                        <div class="timeline-item">
+                           <div class="timeline-dot bg-purple-500 text-white">
+                                <span class="font-bold">2</span>
+                            </div>
+                            <div class="pl-12">
+                                <h3 class="text-2xl font-bold text-purple-600 mb-2">2年目 (~2027.6): スケールと深化</h3>
+                                <div class="card">
+                                    <ul class="list-disc list-inside space-y-1 text-left">
+                                        <li><span class="font-bold">Infora:</span> 提携先を5-10都道府県へ拡大。対応難病を50種以上に。</li>
+                                        <li><span class="font-bold">営利事業:</span> コンサル事業を安定化させ、<span class="font-bold">福祉特化型AIチャットボット</span>のMVP開発に着手。</li>
+                                        <li><span class="font-bold">自己成長:</span> 大学院進学準備。政策提言能力を強化。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Year 3 -->
+                        <div class="timeline-item">
+                           <div class="timeline-dot bg-orange-500 text-white">
+                                <span class="font-bold">3</span>
+                            </div>
+                            <div class="pl-12">
+                                <h3 class="text-2xl font-bold text-orange-600 mb-2">3年目 (~2028.6): システム変革への挑戦</h3>
+                                <div class="card">
+                                   <ul class="list-disc list-inside space-y-1 text-left">
+                                        <li><span class="font-bold">Infora:</span> 全国展開を視野に、公的情報インフラとしての地位を確立。『WE HOPE』博覧会の準備に着手。</li>
+                                        <li><span class="font-bold">営利事業:</span> 株式会社を設立し、SaaSモデルを本格化。Inforaを支えるエコシステムを完成させる。</li>
+                                        <li><span class="font-bold">自己成長:</span> 日本のケア領域におけるソートリーダーとしての地位を確立。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SWOT Analysis -->
+                <section id="swot">
+                    <h2 class="section-title text-blue-600 border-blue-600">戦略的SWOT分析</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="card border-l-4 border-green-500">
+                            <h3 class="font-bold text-xl mb-2 text-green-700">強み (Strengths)</h3>
+                            <p>圧倒的な当事者性、行動力と巻き込み力、福祉とテクノロジーの越境性、高い言語化能力。</p>
+                        </div>
+                        <div class="card border-l-4 border-red-500">
+                            <h3 class="font-bold text-xl mb-2 text-red-700">弱み (Weaknesses)</h3>
+                            <p>精神的な脆弱性（豆腐メンタル）、要領の悪さ、計画遂行の遅れ。</p>
+                            <p class="mt-2 text-sm text-red-600 font-semibold">改善策: メンター組織化、アジャイル手法導入、戦略的セルフケア。</p>
+                        </div>
+                        <div class="card border-l-4 border-yellow-500">
+                            <h3 class="font-bold text-xl mb-2 text-yellow-700">機会 (Opportunities)</h3>
+                            <p>ケアテック市場の拡大、企業のDE&I・ケアラー支援への関心高騰、ヤングケアラー支援の政策的追い風。</p>
+                        </div>
+                        <div class="card border-l-4 border-gray-500">
+                            <h3 class="font-bold text-xl mb-2 text-gray-700">脅威 (Threats)</h3>
+                            <p>創業者自身の燃え尽き、競争の激化、経済的な不安定性。</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Learning Roadmap -->
+                <section id="learning">
+                    <h2 class="section-title text-indigo-600 border-indigo-600">自己成長ロードマップ</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-bold text-xl mb-2 text-indigo-700">学ぶべき概念</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>リーン・スタートアップ / MVP</li>
+                                <li>ビジネスモデル・キャンバス</li>
+                                <li>NPOのロジックモデル</li>
+                                <li>インパクト測定・マネジメント(IMM)</li>
+                                <li>サービスデザイン / ケアデザイン</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl mb-2 text-indigo-700">推薦図書</h3>
+                            <ul class="list-disc list-inside space-y-1">
+                                <li>『リーン・スタートアップ』</li>
+                                <li>『This is Service Design Doing』</li>
+                                <li>『ケアする人のためのプロジェクトデザイン』</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-8">
+                <!-- Profile Card -->
+                <div class="card text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg flex items-center justify-center bg-purple-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-purple-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold">南光 開斗 (Kaito Nanko)</h3>
+                    <p class="text-purple-600 font-semibold">社会起業家 / 法政大学 現代福祉学部 2年</p>
+                    <div class="mt-4 pt-4 border-t">
+                        <p class="font-bold">原体験:</p>
+                        <p>ALSの母を持つヤングケアラー、不登校の経験</p>
+                    </div>
+                </div>
+
+                <!-- Brand Identity -->
+                <div class="card">
+                    <h3 class="font-bold text-xl mb-3 text-center">ブランドアイデンティティ</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span class="bg-purple-100 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">#心のきらめき</span>
+                            <span class="bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">#情報格差をなくせ</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">#ケアをデザインする</span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">#当事者から社会起業家へ</span>
+                            <span class="bg-orange-100 text-orange-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full">#福祉の未来を実装する</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Similar Greats -->
+                <div class="card">
+                    <h3 class="font-bold text-xl mb-3 text-center">類似する偉人</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <div class="icon-box bg-gray-200 w-12 h-12 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 16.5v-7" /><path d="M12 7.5h.01" /></svg></div>
+                            <div><span class="font-bold">ルイ・ブライユ:</span> 情報インフラの発明者</div>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="icon-box bg-gray-200 w-12 h-12 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /></svg></div>
+                            <div><span class="font-bold">ヘレン・ケラー:</span> 個人の物語を社会変革へ</div>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="icon-box bg-gray-200 w-12 h-12 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg></div>
+                            <div><span class="font-bold">ムハマド・ユヌス:</span> 持続可能な社会事業モデル</div>
+                        </li>
+                    </ul>
+                </div>
+                 
+                <!-- People to Involve -->
+                <div class="card">
+                     <h3 class="font-bold text-xl mb-3 text-center">関わるべき人物像</h3>
+                     <ul class="space-y-2">
+                         <li><span class="font-bold text-purple-700">COOタイプの実行者:</span> ビジョンを現実に</li>
+                         <li><span class="font-bold text-green-700">CFOタイプの財務メンター:</span> ハイブリッドな資金戦略</li>
+                         <li><span class="font-bold text-blue-700">経験済みの社会起業家:</span> 創業者特有の孤独の支え</li>
+                         <li><span class="font-bold text-orange-700">ATの技術顧問:</span> 最先端技術の知見</li>
+                         <li><span class="font-bold text-gray-700">「白髪」のアドバイザー:</span> 大局的な戦略と人脈</li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center p-4 mt-12 text-gray-500 text-sm">
+        <p>南光開斗 戦略的ロードマップ | 最終更新: 2024年6月</p>
+    </footer>
+
+</body>
+</html>
