@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>土肥将敦教授と南光開斗の挑戦 - ソーシャルイノベーションへの羅針盤</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fffbeb; /* amber-50 */
+            color: #44403c; /* stone-700 */
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://placehold.co/1200x600/f59e0b/ffffff?text=Social+Innovation') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+        .ecopyon {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            width: 100px;
+            height: auto;
+        }
+        .section-title {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #fde68a; /* amber-200 */
+            display: flex;
+            flex-direction: column;
+        }
+        .card-content {
+            flex-grow: 1;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .keyword-tag {
+            background-color: #fef9c3; /* yellow-100 */
+            color: #854d0e; /* yellow-900 */
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 2px;
+        }
+        .infographic-number {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #d97706; /* amber-600 */
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+        .accordion-button.active + .accordion-content {
+            max-height: 500px; /* Sufficient height for smooth animation */
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .tab-button.active {
+            border-bottom-color: #f59e0b; /* amber-500 */
+            color: #b45309; /* amber-700 */
+            font-weight: 700;
+        }
+        .prose-blockquote {
+             border-left-color: #f59e0b; /* amber-500 */
+             padding-left: 1rem;
+             font-style: italic;
+             color: #57534e; /* stone-600 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero Section -->
+    <header class="hero-section text-white text-center py-20 px-4">
+        <!-- えこぴょんの画像をBase64で埋め込み -->
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAASUkqAAgAAAABABIBAwABAAAABgASAAAAAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAHMAjADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1VXV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIydLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A/v4ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA-igoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA-igoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA-igoAKKKKACiiigAooooAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigAooooAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigAooooAKKKKACiiigA-igoAKKKKACiiigAooooAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigAooooAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigAooooAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigAooooAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigAooooAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igoAKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-igo AKKKKACiiigA-' alt='法政大学キャラクターえこぴょん' class='ecopyon' />
+        <div class="container mx-auto text-center px-4 pb-12 pt-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">土肥将敦教授と南光開斗の挑戦</h1>
+            <p class="text-lg md:text-2xl">ソーシャルイノベーションへの羅針盤</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- Introduction -->
+        <section class="mb-16 text-center">
+            <p class="text-lg max-w-3xl mx-auto">
+                法政大学の土肥将敦教授が探求する「ソーシャル・イノベーション」の理論と、南光開斗さんが実践する「当事者発のソーシャルアクション」。二つの道が交差する点に、日本の社会課題解決を加速させる大きな可能性があります。このページでは、その可能性を多角的に探ります。
+            </p>
+        </section>
+
+        <!-- Part 1: 土肥将敦教授の世界 -->
+        <section id="prof-doi" class="mb-16">
+            <h2 class="section-title text-3xl text-center mb-10 text-amber-600">Part 1: 土肥将敦教授の世界 - 理論と実践の架け橋</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="card p-6 lg:col-span-3">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold mb-4">1. 基本情報</h3>
+                        <div class="space-y-3">
+                            <p><strong>所属:</strong> 法政大学 現代福祉学部 福祉コミュニティ学科 教授</p>
+                            <p><strong>経歴:</strong> 一橋大学大学院商学研究科博士後期課程単位取得退学。博士（商学）。高崎経済大学等を経て現職。ベルリン自由大学客員研究員も歴任。</p>
+                            <p><strong>研究領域:</strong> 経営学の視点から<span class="font-bold text-amber-600">ソーシャル・イノベーション、CSR、社会的企業家、B Corp</span>などを研究。福祉と経営の架橋を目指す。</p>
+                            <p><strong>研究手法:</strong> NPO法人フローレンスやヤマト福祉財団など、先進的な組織の事例研究（ケーススタディ）を通じ、イノベーションのプロセスやメカニズムを解明する質的アプローチが特徴。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-6">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold mb-4">2. 歴代の研究テーマ</h3>
+                        <p>初期は「ソーシャル・ビジネス」概念の形成過程を分析。博士研究ではヤマトグループを事例に、社会的企業家がいかに社会の「制度」を変革するかを「正統性」の獲得プロセスから解明しました。</p>
+                    </div>
+                </div>
+
+                <div class="card p-6">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold mb-4">3. 現在の研究テーマ</h3>
+                        <p>B Corp認証に代表される、利益と社会貢献を両立する持続可能な経営モデルへと研究を発展。特に、株式会社クラダシとの共同研究など、産学連携による実践的研究に注力しています。</p>
+                    </div>
+                </div>
+                
+                <div class="card p-6">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold mb-4">4. 主な思想・主張と社会的評価</h3>
+                        <blockquote class="prose-blockquote my-4">
+                            「社会課題解決を目的とする新しい事業は、いかにして社会的な『お墨付き』（＝正統性）を得て、支持や資源を集め、社会の制度を変えていくのか？」
+                        </blockquote>
+                        <p>この「正統性の戦略的マネジメント」という理論的支柱は、学術界および実務界から高く評価されています。</p>
+                    </div>
+                </div>
+
+                <div class="card p-6">
+                     <div class="card-content">
+                        <h3 class="text-xl font-bold mb-4">5. キーワード一覧</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="keyword-tag">ソーシャル・イノベーション</span>
+                            <span class="keyword-tag">CSR</span>
+                            <span class="keyword-tag">正統性(Legitimacy)</span>
+                            <span class="keyword-tag">B Corp</span>
+                            <span class="keyword-tag">社会的企業家</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-6 lg:col-span-2">
+                    <div class="card-content">
+                        <h3 class="text-xl font-bold mb-4">6. 関連する研究者・起業家</h3>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li><strong>谷本 寛治 (早稲田大学教授):</strong> 土肥教授の指導教官で、日本のCSR研究の第一人者。</li>
+                            <li><strong>大室 悦賀 (長野県立大学大学院教授):</strong> ソーシャル・イノベーションの「クラスター」研究における重要な対話者。</li>
+                             <li><strong>駒崎 弘樹 (NPO法人フローレンス会長):</strong> 研究対象であり、理論の実践者。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Part 2: 南光開斗の挑戦とInfora -->
+        <section id="nanko-infora" class="mb-16">
+            <h2 class="section-title text-3xl text-center mb-10 text-orange-500">Part 2: 南光開斗の挑戦 - 当事者性から生まれる希望</h2>
+             <!-- Inforaの社会課題 Infographics -->
+            <div class="card p-6 mb-8">
+                <h3 class="text-xl font-bold mb-4 text-center">Inforaが挑む「選択肢の情報格差」という社会課題</h3>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <p class="text-lg font-semibold">難病と共に生きる人々</p>
+                        <p class="infographic-number !text-orange-500">94万人</p>
+                        <p class="text-sm text-gray-600">指定難病の医療受給者証所持者数 (2022年度末)。この他にも多くの人々が未診断・未指定の病と向き合っています。</p>
+                        <p class="mt-2 text-gray-700"><strong>課題:</strong> 診断後の絶望感の中、利用できる制度や多様な生き方のモデルといった「希望の情報」にアクセスすることが極めて困難。</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold">ヤングケアラー</p>
+                        <p class="infographic-number !text-orange-500">約17人に1人</p>
+                        <p class="text-sm text-gray-600">高校2年生の約5.9%が「世話をしている家族がいる」と回答 (2022年度調査)。孤立しがちで、自身のキャリアや学びの機会を逸しやすい。</p>
+                        <p class="mt-2 text-gray-700"><strong>課題:</strong> 誰に相談すれば良いか分からず、公的支援や同じ境遇の仲間と繋がる情報から隔絶されやすい。</p>
+                    </div>
+                    <div>
+                        <p class="text-lg font-semibold">情報の壁</p>
+                         <svg class="w-16 h-16 mx-auto text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" transform="scale(0.6) translate(4, 4)"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M12 6h.01M6 12h.01M18 12h.01M8.46 8.46h.01M15.54 15.54h.01M8.46 15.54h.01M15.54 8.46h.01"></path></svg>
+                        <p class="text-lg font-semibold mt-1">たらい回しの構造</p>
+                        <p class="mt-2 text-gray-700">情報は行政、医療機関、NPO等に散在。当事者は心身ともに疲弊している中で、自ら情報を探し回らねばならず、多くの可能性を諦めてしまう。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold text-orange-500">Infora: 「知る」と「願う」から、希望へ。</h3>
+                <p class="mt-2 max-w-2xl mx-auto">南光さんの原体験から生まれたInforaは、この「情報の壁」を壊し、困難下にある人々へ「心のきらめき」をもたらす選択肢を届ける活動です。Webでの情報発信、情報キットBOX、夢実現サポートなど、多角的なアプローチで希望をデザインしています。</p>
+            </div>
+        </section>
+
+        <!-- Part 3: コラボレーションの可能性 -->
+        <section id="collaboration" class="mb-16">
+            <h2 class="section-title text-3xl text-center mb-10 text-green-600">Part 3: 交差する視点 - コラボレーションの可能性</h2>
+            <div class="relative max-w-4xl mx-auto p-8">
+                <!-- Venn diagram-like background -->
+                <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-64 h-64 bg-amber-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+                <div class="absolute top-1/2 right-1/4 -translate-y-1/2 w-64 h-64 bg-orange-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                <div class="relative grid md:grid-cols-2 gap-8">
+                    <div class="text-center p-4">
+                        <h3 class="text-xl font-bold text-amber-700">土肥教授の強み (理論的羅針盤)</h3>
+                        <ul class="mt-2 space-y-1 list-disc list-inside text-left mx-auto max-w-xs">
+                            <li>ソーシャルイノベーション理論</li>
+                            <li>「正統性」獲得の戦略論</li>
+                            <li>事例研究に基づくプロセス分析</li>
+                            <li>B Corp等の先進的知見</li>
+                            <li>学術的な言語化・体系化能力</li>
+                        </ul>
+                    </div>
+                    <div class="text-center p-4">
+                        <h3 class="text-xl font-bold text-orange-600">南光さんの強み (実践的エンジン)</h3>
+                        <ul class="mt-2 space-y-1 list-disc list-inside text-left mx-auto max-w-xs">
+                            <li>圧倒的な当事者性</li>
+                            <li>課題発見と行動力</li>
+                            <li>共感を呼ぶ発信力</li>
+                            <li>若者・当事者ネットワーク</li>
+                            <li>現代的なテクノロジー活用</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative text-center mt-8 p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold text-green-700">創出されるシナジー</h3>
+                    <p class="mt-2">土肥教授の<span class="font-bold">「理論的羅針盤」</span>と南光さんの<span class="font-bold">「実践的エンジン」</span>を掛け合わせることで、Inforaの活動に「なぜそれが社会に受け入れられるのか」という戦略的視点を導入し、持続可能でインパクトの大きい事業モデルへと昇華させることが可能です。</p>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <div class="card p-6"> <h4 class="font-bold text-lg mb-2 text-green-700">ゼミ活動</h4> <p>Inforaの活動をケースに、「当事者発NPOの正統性獲得プロセス」を共同研究。ゼミ生と共にInforaのステークホルダー（支援者、連携機関等）へのインタビュー調査を行う。</p> </div>
+                <div class="card p-6"> <h4 class="font-bold text-lg mb-2 text-green-700">学術研究</h4> <p>卒論テーマとして、土肥教授の指導のもとInforaの実践を学術的に分析。「ソーシャル・イノベーションの再帰的プロセス」や「正統性構築戦略」の観点から論文を執筆し、学会発表を目指す。</p> </div>
+                <div class="card p-6"> <h4 class="font-bold text-lg mb-2 text-green-700">キャリア形成</h4> <p>土肥教授がネットワークを持つ社会的企業（B Corp認証企業など）や研究者を紹介してもらい、インターンシップやメンタリングの機会を探る。</p> </div>
+                <div class="card p-6"> <h4 class="font-bold text-lg mb-2 text-green-700">実践活動 (Infora)</h4> <p>Inforaの事業計画やミッション・ビジョンを、土肥教授の「正統性」理論に基づき見直し、より多くの支持と資源を集めるための戦略的コミュニケーションを設計する。</p> </div>
+                <div class="card p-6"> <h4 class="font-bold text-lg mb-2 text-green-700">機会提供</h4> <p>土肥教授が登壇するシンポジウムや講義で、南光さんが当事者・実践者としてゲスト登壇。理論と実践の対話の場を創出する。</p> </div>
+                <div class="card p-6"> <h4 class="font-bold text-lg mb-2 text-green-700">ソーシャルイノベーション共創</h4> <p>「福祉と経営を学ぶ学生」と「当事者性を持つ若者」を繋ぎ、新たなソーシャル・イノベーションを生み出すワークショップやビジネスコンテストを共同で企画・運営する。</p> </div>
+            </div>
+        </section>
+
+        <!-- Part 4: 未来への羅針盤 -->
+        <section id="future-compass">
+            <h2 class="section-title text-3xl text-center mb-10 text-purple-600">Part 4: 未来への羅針盤 - 南光開斗さんへの提案</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-4 border-b border-gray-200">
+                    <nav class="flex flex-wrap -mb-px" id="tab-buttons">
+                        <button class="tab-button text-gray-500 hover:text-amber-600 hover:border-amber-300 py-4 px-6 border-b-2 border-transparent" data-tab="1">リソース/人脈</button>
+                        <button class="tab-button text-gray-500 hover:text-amber-600 hover:border-amber-300 py-4 px-6 border-b-2 border-transparent" data-tab="2">知識/概念</button>
+                        <button class="tab-button text-gray-500 hover:text-amber-600 hover:border-amber-300 py-4 px-6 border-b-2 border-transparent" data-tab="3">事業アイデア</button>
+                    </nav>
+                </div>
+
+                <div id="tab-contents">
+                    <div class="tab-content" data-tab="1"></div>
+                    <div class="tab-content" data-tab="2"></div>
+                    <div class="tab-content" data-tab="3"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- まとめと今後の期待 -->
+        <section id="conclusion" class="mt-16 text-center bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="section-title text-3xl mb-4 text-gray-800">7. まとめ - 協同の先に</h2>
+             <p class="max-w-3xl mx-auto text-lg leading-relaxed">
+                土肥将敦教授は、日本の経営学に「ソーシャル・イノベーション」という視点を根付かせ、そのプロセスを「正統性」という鍵概念で解明してきた研究者です。彼の功績は、社会貢献を戦略的なマネジメント対象として捉え、福祉と経営という分断されがちな世界を架橋した点にあります。
+             </p>
+             <p class="max-w-3xl mx-auto text-lg mt-4 leading-relaxed">
+                そして、南光さんのような次世代の実践者との連携は、その理論に現実の血肉を与え、社会変革を加速させる可能性を秘めています。土肥教授の学識と、南光さんの当事者性と行動力が融合した時、それは単なるゼミでの学びを超え、社会を動かす大きなうねりを生み出すことができるでしょう。
+             </p>
+        </section>
+
+    </main>
+    
+    <footer class="text-center p-6 bg-stone-800 text-white mt-12">
+        <p>&copy; 2025 AI Research for Kaito Nanko. All Rights Reserved.</p>
+        <p class="text-sm mt-1 text-stone-400">This page was generated based on public information and user-provided documents.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Tab Content Injection ---
+            const tabContentsData = {
+                "1": `
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                        <div>
+                            <h4 class="font-bold text-lg mb-3 text-amber-700">関わるべき人物 (一部)</h4>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li><strong>駒崎弘樹氏 (NPO法人フローレンス):</strong> 日本の代表的社会的企業家。政策提言の手法も学べる。</li>
+                                <li><strong>武藤将胤氏 (WITH ALS):</strong> 同じALSという課題にテクノロジーとクリエイティブで挑む当事者。</li>
+                                <li><strong>澤田智洋氏 (世界ゆるスポーツ協会):</strong> 「社会課題を可能性に変える」デザイン思考の達人。</li>
+                                <li><strong>井上英之氏 (慶應義塾大学教授):</strong> ソーシャルイノベーション研究者、実践支援者。</li>
+                                <li><strong>藤沢烈氏 (RCF代表理事):</strong> 社会課題解決のコンサルタント。</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-3 text-amber-700">関わるべき組織 (一部)</h4>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li><strong>株式会社LITALICO:</strong> 障害福祉分野のリーディングカンパニー。事業拡大のモデル。</li>
+                                <li><strong>株式会社ヘラルボニー:</strong> 福祉を起点に新たな文化を創るアートライフスタイルブランド。</li>
+                                <li><strong>NPO法人ETIC.:</strong> 社会起業家育成の老舗。アクセラレータープログラムが豊富。</li>
+                                <li><strong>Ashoka Japan:</strong> 世界的な社会起業家ネットワーク。フェローシップは大きな力になる。</li>
+                                <li><strong>株式会社Ridilover (リディラバ):</strong> 社会課題の構造を解き明かし、事業化するモデル。</li>
+                                <li><strong>認定NPO法人DPI日本会議:</strong> 障害者自身の権利擁護活動を行う組織。政策提言の連携先。</li>
+                                <li><strong>日本ケアラー連盟:</strong> ヤングケアラー支援の政策・実践ネットワーク。</li>
+                            </ul>
+                        </div>
+                         <div class="md:col-span-2">
+                            <h4 class="font-bold text-lg mb-3 text-amber-700">活用可能なリソース（助成金・プログラム）</h4>
+                            <ul class="list-disc list-inside space-y-2">
+                                <li><strong>公的助成:</strong> 休眠預金等活用事業、赤い羽根共同募金、日本財団、トヨタ財団</li>
+                                <li><strong>民間プログラム:</strong> 各種アクセラレータープログラム(ETIC., KIBOW)、大学発ベンチャー支援制度（法政大学）</li>
+                                <li><strong>現物・スキル支援:</strong> プロボノ支援(サービスグラント)、Google for Nonprofits, Salesforce.org</li>
+                                <li><strong>資金調達手法:</strong> クラウドファンディング、遺贈寄付、ふるさと納税（ガバメントクラウドファンディング）</li>
+                            </ul>
+                        </div>
+                    </div>`,
+                "2": `
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-3 text-amber-700">読むべき書籍・論文 (BEST20)</h4>
+                            <ul class="list-disc list-inside space-y-2 text-sm">
+                                <li>土肥将敦『社会的企業者―CSIの推進プロセスにおける正統性』</li>
+                                <li>C.ボールドウィン, K.ゴダーツ『ビジネスの新形態 B Corp入門』(土肥教授監訳)</li>
+                                <li>谷本寛治『ソーシャル・イノベーションの創出と普及』</li>
+                                <li>井上英之『ソーシャル・イノベーション―社会を変える企業家の挑戦』</li>
+                                <li>P.F.ドラッカー『非営利組織の経営』</li>
+                                <li>M.E.ポーター&M.R.クラマー「Creating Shared Value」(論文)</li>
+                                <li>伊藤亜紗『目の見えない人は世界をどう見ているのか』</li>
+                                <li>V.E.フランクル『夜と霧』</li>
+                                <li>R.K.Yin『ケース・スタディ・リサーチ』</li>
+                                <li>クレイトン・クリステンセン『イノベーションのジレンマ』</li>
+                                <li>田口一成『ソーシャルビジネスで世界を変える』</li>
+                                <li>イヴォン・シュイナード『社員をサーフィンに行かせよう』</li>
+                                <li>E.F.シューマッハー『スモール イズ ビューティフル』</li>
+                                <li>アマルティア・セン『人間の安全保障』</li>
+                                <li>斎藤幸平『人新世の「資本論」』</li>
+                                <li>國分功一郎『暇と退屈の倫理学』</li>
+                                <li>熊谷晋一郎『当事者研究の研究』</li>
+                                <li>湯浅誠『反貧困』</li>
+                                <li>山口周『ニュータイプの時代』</li>
+                                <li>小川さやか『「その日暮らし」の人類学』</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-3 text-amber-700">知っておくべき言葉・概念・潮流 (BEST30)</h4>
+                            <ul class="list-disc list-inside space-y-2 text-sm">
+                                <li>正統性 (Legitimacy)</li>
+                                <li>B Corp / ゼブラ企業</li>
+                                <li>コレクティブ・インパクト</li>
+                                <li>セオリー・オブ・チェンジ / ロジックモデル</li>
+                                <li>Co-production (共同生産)</li>
+                                <li>インパクト投資 / SIB (ソーシャル・インパクト・ボンド)</li>
+                                <li>DEI (Diversity, Equity & Inclusion)</li>
+                                <li>アクセシビリティ / ユニバーサルデザイン</li>
+                                <li>社会的処方 (Social Prescribing)</li>
+                                <li>アドボカシー (政策提言)</li>
+                                <li>サステナビリティ / SDGs</li>
+                                <li>サーキュラー・エコノミー（循環型経済）</li>
+                                <li>ステークホルダー資本主義</li>
+                                <li>パーパス経営</li>
+                                <li>ティール組織</li>
+                                <li>アジャイル開発 / リーンスタートアップ</li>
+                                <li>ピアサポート / 当事者研究</li>
+                                <li>インクルーシブ・デザイン</li>
+                                <li>コモンズ（共有資源）</li>
+                                <li>DX (デジタル・トランスフォーメーション)</li>
+                                <li>エビデンス・ベースド・ポリシー・メイキング (EBPM)</li>
+                                <li>リビングラボ</li>
+                                <li>ソーシャル・キャピタル (社会関係資本)</li>
+                                <li>ナラティブ・アプローチ</li>
+                                <li>パブリック・アフェアーズ</li>
+                                <li>インパクト評価・マネジメント (IMM)</li>
+                                <li>ベーシック・インカム</li>
+                                <li>フェミニズム / ジェンダー論</li>
+                                <li>ソーシャルグラフ</li>
+                                <li>プラットフォーム・ビジネス</li>
+                            </ul>
+                        </div>
+                    </div>`,
+                "3": `
+                    <div>
+                        <h4 class="font-bold text-lg mb-2 text-amber-700">Infora以外で「稼ぐ」を実現する起業案 BEST 10</h4>
+                        <p class="text-sm mb-4">Inforaの活動理念と親和性を持ちつつ、生活費や学費を確保するための事業アイデアです。</p>
+                        <div class="space-y-2">
+                            <div class="accordion-item"><button class="accordion-button w-full text-left font-semibold p-3 bg-gray-100 hover:bg-gray-200 rounded-md transition-all duration-300">1. インクルーシブ・コンサルティング/研修事業</button><div class="accordion-content p-4 bg-gray-50 rounded-b-md"><p>企業や自治体に対し、障害当事者やケアラーの視点を活かした商品開発、サービス改善、DEI推進に関する研修やコンサルティングを提供。Inforaのネットワークが強みになる。</p></div></div>
+                            <div class="accordion-item"><button class="accordion-button w-full text-left font-semibold p-3 bg-gray-100 hover:bg-gray-200 rounded-md transition-all duration-300">2. メディア・コンテンツ事業</button><div class="accordion-content p-4 bg-gray-50 rounded-b-md"><p>自身の経験や取材に基づき、生き方やケア、社会課題に関する有料note、Voicy、オンラインサロンなどを運営。書籍の執筆も視野に。</p></div></div>
+                            <div class="accordion-item"><button class="accordion-button w-full text-left font-semibold p-3 bg-gray-100 hover:bg-gray-200 rounded-md transition-all duration-300">3. 福祉領域特化のキャリア支援サービス</button><div class="accordion-content p-4 bg-gray-50 rounded-b-md"><p>福祉を志す学生や若手と、先進的なNPO・社会的企業を繋ぐマッチングプラットフォームやキャリア相談サービス。</p></div></div>
+                            <div class="accordion-item"><button class="accordion-button w-full text-left font-semibold p-3 bg-gray-100 hover:bg-gray-200 rounded-md transition-all duration-300">4. 「社会的処方」関連SaaS事業</button><div class="accordion-content p-4 bg-gray-50 rounded-b-md"><p>Inforaで培った情報データベースのノウハウを活かし、各地域の社会資源情報を整理・可視化し、医療機関や自治体向けに提供する月額課金サービス。</p></div></div>
+                            <div class="accordion-item"><button class="accordion-button w-full text-left font-semibold p-3 bg-gray-100 hover:bg-gray-200 rounded-md transition-all duration-300">5. 講演・執筆エージェント事業</button><div class="accordion-content p-4 bg-gray-50 rounded-b-md"><p>自身の経験を活かし、他の多様な当事者（難病、障害、ケアラー等）がスピーカーとして活躍できるよう、マネジメントやプロデュース、企業への営業を行う。</p></div></div>
+                            <div class="accordion-item"><button class="accordion-button w-full text-left font-semibold p-3 bg-gray-100 hover:bg-gray-200 rounded-md transition-all duration-300">6. 当事者視点のアクセシビリティ・チェックサービス</button><div class="accordion-content p-4 bg-gray-50 rounded-b-md"><p>ウェブサイト、公共施設、商品などのアクセシビリティを当事者チームで評価し、改善レポートを企業に販売する。</p></div></div>
+                            <div class="accordion-item"><button class="accordion-button w-full text-left font-semibold p-3 bg-gray-100 hover:bg-gray-200 rounded-md transition-all duration-300">7. ケアラー向けオンラインコミュニティ＆スキルシェア</button><div class="accordion-content p-4 bg-gray-50 rounded-b-md"><p>ヤングケアラーを含むケアラーが悩みを共有し、介護スキルや知識を学び合える月額制のクローズドコミュニティを運営する。</p></div></div>
+                            <div class="accordion-item"><button class="accordion-button w-full text-left font-semibold p-3 bg-gray-100 hover:bg-gray-200 rounded-md transition-all duration-300">8. インクルーシブ・ツーリズム企画</button><div class="accordion-content p-4 bg-gray-50 rounded-b-md"><p>障害や病気があっても安心して楽しめる旅行プランを企画・販売。バリアフリー調査や現地サポートとセットで提供する。</p></div></div>
+                            <div class="accordion-item"><button class="accordion-button w-full text-left font-semibold p-3 bg-gray-100 hover:bg-gray-200 rounded-md transition-all duration-300">9. 福祉用具のカスタマイズ＆レンタル事業</button><div class="accordion-content p-4 bg-gray-50 rounded-b-md"><p>既存の福祉用具をユーザーのニーズに合わせて改造したり、短期利用のためのレンタルサービスを展開する。</p></div></div>
+                            <div class="accordion-item"><button class="accordion-button w-full text-left font-semibold p-3 bg-gray-100 hover:bg-gray-200 rounded-md transition-all duration-300">10. ピアサポート人材育成・派遣事業</button><div class="accordion-content p-4 bg-gray-50 rounded-b-md"><p>同じような経験を持つ当事者（ピア）を研修し、病院や支援機関に「ピアサポーター」として派遣する有料サービス。</p></div></div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-bold text-lg mb-2 text-amber-700">Inforaの考えられるマネタイズ方法</h4>
+                         <ul class="list-disc list-inside space-y-2">
+                            <li><strong>寄付・会費:</strong> 個人・法人からの継続的な支援。</li>
+                            <li><strong>助成金・補助金:</strong> 公的機関や民間財団からの資金獲得。</li>
+                            <li><strong>行政・企業からの受託事業:</strong> 相談窓口運営、情報サイト構築、調査研究など。</li>
+                            <li><strong>リードユーザー事業:</strong> Inforaの当事者ネットワークを活かし、企業の商品開発等に協力し対価を得る。</li>
+                            <li><strong>研修・コンサルティング事業:</strong> 医療・福祉専門職や企業向けに、当事者視点からの研修を提供。</li>
+                            <li><strong>情報プロダクトの法人向け販売:</strong> 自治体や病院向けに、地域ごとにカスタマイズした情報キットやデータを提供。</li>
+                         </ul>
+                    </div>
+                    `
+            };
+
+            // Inject content into tabs
+            Object.keys(tabContentsData).forEach(tabId => {
+                const contentDiv = document.querySelector(`.tab-content[data-tab="${tabId}"]`);
+                if (contentDiv) {
+                    contentDiv.innerHTML = tabContentsData[tabId];
+                }
+            });
+
+            // --- Event Listeners ---
+            const tabButtonsContainer = document.getElementById('tab-buttons');
+            const tabContentsContainer = document.getElementById('tab-contents');
+            const tabs = tabButtonsContainer.querySelectorAll('.tab-button');
+            const contents = tabContentsContainer.querySelectorAll('.tab-content');
+
+            // Set initial active tab
+            if (tabs.length > 0 && contents.length > 0) {
+                tabs[0].classList.add('active');
+                contents[0].classList.add('active');
+            }
+            
+            tabButtonsContainer.addEventListener('click', (e) => {
+                if (e.target.matches('.tab-button')) {
+                    const tabId = e.target.dataset.tab;
+
+                    tabs.forEach(tab => tab.classList.remove('active'));
+                    e.target.classList.add('active');
+
+                    contents.forEach(content => {
+                        content.classList.remove('active');
+                        if (content.dataset.tab === tabId) {
+                            content.classList.add('active');
+                        }
+                    });
+                }
+            });
+
+            // Accordion functionality using event delegation
+            const futureCompassSection = document.getElementById('future-compass');
+            futureCompassSection.addEventListener('click', function(e) {
+                if (e.target.matches('.accordion-button')) {
+                    const button = e.target;
+                    // Deactivate other accordions in the same group
+                    const parent = button.closest('.space-y-2');
+                    if (parent) {
+                        parent.querySelectorAll('.accordion-button').forEach(btn => {
+                            if (btn !== button) {
+                                btn.classList.remove('active');
+                                btn.nextElementSibling.style.maxHeight = null;
+                            }
+                        });
+                    }
+                    
+                    button.classList.toggle('active');
+                    const content = button.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
